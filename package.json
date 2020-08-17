@@ -1,0 +1,30 @@
+{
+  "name": "next-linaria",
+  "version": "0.9.0",
+  "description": "Linaria support for Next.js applications",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "linaria": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mistereo/next-linaria.git"
+  },
+  "keywords": [
+    "linaria",
+    "next",
+    "next.js",
+    "css"
+  ],
+  "author": "Vladimir Alexandrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mistereo/next-linaria/issues"
+  },
+  "homepage": "https://github.com/Mistereo/next-linaria#readme"
+}
