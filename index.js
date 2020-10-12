@@ -33,6 +33,7 @@ module.exports = (nextConfig = {}) => {
       traverse(config.module.rules);
       config.module.rules.push({
         test: /\.(tsx|ts|js|mjs|jsx)$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: require.resolve('linaria/loader'),
