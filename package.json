@@ -1,6 +1,6 @@
 {
   "name": "next-linaria",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "description": "Linaria support for Next.js applications",
   "main": "index.js",
   "dependencies": {},

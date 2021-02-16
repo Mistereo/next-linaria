@@ -36,7 +36,7 @@ module.exports = (nextConfig = {}) => {
         exclude: /node_modules/,
         use: [
           {
-            loader: require.resolve('linaria/loader'),
+            loader: require.resolve('@linaria/webpack-loader'),
             options: {
               sourceMap: process.env.NODE_ENV !== 'production',
               ...(nextConfig.linaria || {}),
