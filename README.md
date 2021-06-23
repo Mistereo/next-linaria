@@ -6,7 +6,9 @@ Adds [Linaria](https://github.com/callstack/linaria) to [built-in CSS support](h
 
 This module is intended to be used with Next.js built-in CSS support (https://nextjs.org/docs/basic-features/built-in-css-support) and probably will not work with custom CSS handling.
 
-Requires Next.js 9.2 or above.
+Version 0.11 of this package requires Next.js 9.5.4 or above.
+
+For Next.js 9.2-9.5.3 use 0.10.
 
 ## Installation
 
