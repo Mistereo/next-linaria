@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {
-    "linaria": "*"
+    "@linaria/webpack-loader": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
