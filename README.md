@@ -59,7 +59,31 @@ module.exports = withLinaria({
   },
 });
 ```
+### Transpiling Linaria files from node_modules
+By default this package will ignore all of node_modules by default.
 
+If you have a package inside of node_modules with Linaria files that you would like to transpile, you need to add the package to the rules array of the Linaria config
+
+Keep in mind that this overrides Linaria's default rules, so you will want to make sure you add 
+```js
+// next.config.js
+const withLinaria = require('next-linaria');
+module.exports = withLinaria({
+  linaria: {
+    rules: [
+      {
+        action: require('@linaria/shaker').default,
+      },
+      {
+        test: /node_modules[\/\\](?!\@example\\package)/,
+        action: 'ignore',
+      },
+    ],
+    /* other linaria options here */
+  },
+});
+```
+This can be used in combination with https://github.com/martpie/next-transpile-modules to transpile the rest of the package if necessary
 ## License
 
 The MIT License (MIT)

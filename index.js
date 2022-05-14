@@ -30,6 +30,16 @@ function traverse(rules) {
   }
 }
 
+function getLinariaIgnore(linariaConfig) {
+  if (linariaConfig && linariaConfig.rules) {
+    const ignoreRule = linariaConfig.rules.find(rule =>
+      rule.action && rule.action === 'ignore' && rule.test
+    );
+    return ignoreRule && ignoreRule.test
+  }
+  return null;
+}
+
 module.exports = (nextConfig = {}) => {
   return {
     ...nextConfig,
@@ -37,7 +47,7 @@ module.exports = (nextConfig = {}) => {
       traverse(config.module.rules);
       config.module.rules.push({
         test: /\.(tsx|ts|js|mjs|jsx)$/,
-        exclude: /node_modules/,
+        exclude: getLinariaIgnore(nextConfig.linaria) || /node_modules/,
         use: [
           {
             loader: require.resolve('@linaria/webpack-loader'),
