@@ -1,5 +1,5 @@
 # Next.js + Linaria
-
+thats such a cool project man!
 Adds [Linaria](https://github.com/callstack/linaria) to [built-in CSS support](https://nextjs.org/docs/basic-features/built-in-css-support) in Next.js.
 
 > The version `1.0.0` and above only works with linaria@3. If you need support for linaria@2, please use version `0.11.0` of this package.
